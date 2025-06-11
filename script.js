@@ -1,4 +1,4 @@
-// LET E CONST
+ // LET E CONST
 
 // Declarando a variável 'a' no escopo global com valor 10
 let a = 10;
@@ -92,3 +92,45 @@ const user = {
 }
 
 user.sayUserName()
+
+// Filter - O filter é um método de array para filtrar dados, baseado em alguma
+// condição que estabelecemos
+
+// Isso nos dá um array com apenas os elementos que queremos de forma perfomatica
+
+const arr = [1, 2, 3, 4, 5]
+
+const highNumbers = arr.filter((n) => {
+  if(n >= 3) {
+    return n
+  }
+}) 
+
+console.log(highNumbers)
+
+const users = [
+    {name: 'Paulo', avaliable: true},
+    {name: 'Eberson', avaliable: false},
+    {name: 'Eberson', avaliable: true},
+]
+
+const avaliableUsers = users.filter((user) => user.avaliable)
+
+
+// MAP - É um método de array também, que percorre todos os elementos;
+// Quando utilizamos Map, estamos querenedo modificar os dados do array
+
+const produtos = [
+    {name: 'Camisas', prince: 10.99, category: 'Roupa'},
+    {name: 'Chaleira eletrica', prince: 49.99, category: 'Eletro'},
+    {name: 'Fogão', prince: 400, category: 'Eletro'},
+    {name: 'Calça jeans', prince: 50.99, category: 'Roupa'},
+
+]
+
+produtos.map((produto) => {
+    if(produto.category === 'Roupas')
+      produto.aVenda = true
+})
+
+console.log(produtos)
