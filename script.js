@@ -134,3 +134,12 @@ produtos.map((produto) => {
 })
 
 console.log(produtos)
+
+// Template literals
+//  O recurso de tamplete literais perite concatenar uma string de forma mais simples
+// podemos colocar as variaveis entre textos
+
+const userName = "Paulo"
+const idade = 33
+
+console.log( `o nome do usuário é ${userName}e ele tem $ e ele tem ${idade} anos.` )
